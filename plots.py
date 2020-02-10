@@ -28,7 +28,7 @@ def iteration_plot(_it, x_range, ax):
         _f = _n[2]
         ax.plot([_x, _x], [_x,_f], 'k', lw=1, alpha=.25)
         ax.plot([_x,_f], [_f,_f], 'k', lw=1, alpha=.25)
-        
+    ax.grid(color='r', linestyle='--', linewidth=.5)
     return ax 
 
 def bifurcation_plot(_it, ax, parameter_name, display_iter=.9):
